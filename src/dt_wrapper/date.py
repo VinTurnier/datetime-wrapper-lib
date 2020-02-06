@@ -42,9 +42,6 @@ class Date(datetime):
 
 
 
-
-
-
 if __name__ == "__main__":
     date = Date.now()
     print(date.to_string("%Y-%m-%d"))
@@ -53,3 +50,4 @@ if __name__ == "__main__":
     print(date.str2date("Jan/31/2020"))
     print(date.str2date("January"))
     print(date.str2date("January 31, 2019"))
+    print(Date.fromtimestamp(1580989151).to_string("%Y-%m-%d"))
