@@ -16,8 +16,9 @@ class Date(datetime):
         format_type = None
         date_with_month_name_and_space = re.compile(r"((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec){1}\s\d{2}\s\d{4}\s\d{2}:\d{2}:\d{2})")
         date_with_month_name_and_slash = re.compile(r"((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec){1}/\d{2}/\d{4})")
-        month_only = re.compile(r"January|Febuary|March|April|May|June|July|August|September|October|November|December")
-        full_month_date_with_space_and_comma = re.compile(r"((January|Febuary|March|April|May|June|July|August|September|October|November|December){1}\s\d{2},\s\d{4})")
+        month_only = re.compile(r"January|February|March|April|May|June|July|August|September|October|November|December")
+        full_month_date_with_space_and_comma = re.compile(r"((January|February|March|April|May|June|July|August|September|October|November|December){1}\s\d{2},\s\d{4})")
+        full_month_date_with_space_no_comma = re.compile(r"((January|February|March|April|May|June|July|August|September|October|November|December){1}\s\d{2}\s\d{4})")
         date_with_dash = re.compile(r"\d{4}-\d{2}-\d{2}")
         if date_with_dash.findall(string_format):
             format_type = "%Y-%m-%d"
