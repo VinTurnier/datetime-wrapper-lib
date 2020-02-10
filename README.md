@@ -5,7 +5,7 @@ a library that wraps around the python datetime standard library. The reason for
 # Installing the library locally
 To install the library to your local machine simply run the following command:
 ```s
-$ pip3 install git+ssh://git@github.com:vinturnier/datetime-wrapper-lib@master#egg=dt_wrapper
+$ pip3 install -e git+https://github.com/vinturnier/datetime-wrapper-lib.git@master#egg=dt_wrapper
 ```
 
 # Methods available
